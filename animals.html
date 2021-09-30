@@ -27,7 +27,7 @@
         <div class = "row">
             <div class = "col-md">Tiger</div>
             <div class = "col-md">Uromastix</div>
-            <div class = "col-md">Mascaw</div>
+            <div class = "col-md">Mongoose</div>
             <div class = "col-md">Meerkat</div>
             <div class = "col-md">Antelope</div>
             <div class = "col-md">Lion</div>
@@ -35,5 +35,152 @@
         </div>
         <p>The row with animal names breaks first as it is written in md(medium)of which the max container width is of 720px.Since resize of the browser window can handle >768 px in the grid.System when set to medium,so it breaks first compared to sm(small)as small can handle resize of window upto 576px</p>
     </div>
+    <br/>
+    <div class="container">
+        <img src="Tiger.jpg" class="img-fluid" alt="Gorilla" width="300" height="400">
+        <img src="Uromastix.jpg" class="img-fluid" alt="Uakari" width="300" height="400">
+        <img src="Mongoose.jpg" class="img-fluid" alt="Nandu" width="300" height="400">
+    </div>
+    <div class="container">
+        <img src="Meerkat.jpg" class="img-thumbnail" alt="Tiger" width="300" height="400">
+        <img src="Antelope.jpg" class="img-thumbnail" alt="Urial" width="300" height="400">
+        <img src="Lion.jpg" class="img-thumbnail" alt="Polar Bear" width="300" height="400">
+    </div>
+    <br/>
+    <br/>
+    <caption style="font-weight: bold; font-size: 20px;">&nbsp; <b>Animals Table</b></caption>
+    <br/>
+    <br/>
+    <table class="table table-bordered table-hover table-sm table-striped" style="width: 100%;">
+      <thread style="text-align: left; border: 2px; font-size: 20px;" class="table_head">
+          <tr style="border: 2px; text-align: center; background-color:violet; color:greenyellow;">
+            <th scope="col">Letter</th>
+            <th scope="col">Animal</th>
+            <th scope="col">City</th>
+            <th scope="col">Car</th>
+          </tr>  
+      </thread>
+      <tbody style="text-align: center; border: 2px; width: 60%;" class="table_body">
+          <tr style="border: 2px; text-align: center;" class="table-primary">
+            <th scope="row" style="text-align: center; color:red">T</th>
+            <td>Tiger</td>
+            <td>India</td>
+            <td>Kia</td>
+          </tr>
+          <tr class="table-secondary" style="border: 2px; color:red">
+            <th scope="row" style="text-align: center;">U</th>
+            <td>Uromastix</td>
+            <td>Africa</td>
+            <td>Audi</td>
+          </tr>
+          <tr class="table-success" style="border: 2px;color:red">
+            <th scope="row" style="text-align: center;">M</th>
+            <td>Mongoose</td>
+            <td>Utica</td>
+            <td>Forenza</td>
+          </tr>
+          <tr class="table-warning" style="border: 2px;color:red">
+            <th scope="row" style="text-align: center;">M</th>
+            <td>Meerkat</td>
+            <td>Canada</td>
+            <td>Benz</td>
+          </tr>
+          <tr class="table-info" style="border: 2px;color:red">
+            <th scope="row" style="text-align: center;">A</th>
+            <td>Antelope</td>
+            <td>Australia</td>
+            <td>Tesla</td>
+          </tr>
+          <tr class="table-danger " style="border: 2px;color:red">
+            <th scope="row" style="text-align: center;">L</th>
+            <td>Lion</td>
+            <td>India</td>
+            <td>BMW</td>
+          </tr>
+      </tbody>
+    </table>
+    <br/>
+    <span class="label_success" style="font-size: 1rem; color:black; background-color: palevioletred; padding:10px; font-family: Arial, Helvetica, sans-serif;">Buttons & Button group</span>
+    <br>
+    <br>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></div>
+      <div class="btn-group" role="group" aria-label="success group">
+        <button type="button" class="btn btn-success">T</button>
+        <button type="button" class="btn btn-success">U</button>
+        <button type="button" class="btn btn-success">M</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="warning group">
+        <button type="button" class="btn btn-warning">M</button>
+        <button type="button" class="btn btn-warning">A</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="danger group">
+        <button type="button" class="btn btn-danger">L</button>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <li><a class="dropdown-item" href="Plain.html">Plain Page</a></li>
+          <li class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="Train.html">Train Page</a></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <form style="padding-left: 20px;">
+      <div class="form-group">
+        <label for="InputEmail1" class="form-label">&nbsp;Email Address</label>
+        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">&nbsp;We'll never share your email  with anyone else.</div>
+      </div>
+      <br/>
+      <div class="form-group">
+        <label for="Animal-label-name" class="form-label">&nbsp;Animal</label>
+        <input type="text" id="animalName" class="form-control" placeholder="Enter your animal">
+      </div>
+      <br/>
+      <div class="form-check">
+        <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      </div>
+      <br/>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <br>
+    <div class="container row" style="padding-left: 50px;">
+      <div class="card" style="width: 18rem; border: 2px solid;">
+        <img src="Tiger.jpg" class="card-img-top" alt="Tiger">
+        <div class="card-body">
+          <h5 class="card-title">Tiger</h5>
+          <p class="card-text">The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside. It is an apex predator, primarily preying on ungulates such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat, which support its requirements for prey and rearing of its offspring.</p>
+          <a href="https://en.wikipedia.org/wiki/Tiger" class="btn btn-primary">About Tiger</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border: 2px solid;">
+        <img src="Uromastix.jpg" class="card-img-top" alt="Uromastix">
+        <div class="card-body">
+          <h5 class="card-title">Uromastix</h5>
+          <p class="card-text">Uromastyx is a genus of African and Asian agamid lizards, the member species of which are commonly called spiny-tailed lizards, uromastyces, mastigures, or dabb lizards. Lizards in the genus Uromastyx are primarily herbivorous, but occasionally eat insects and other small animals, especially young lizards. They spend most of their waking hours basking in the sun, hiding in underground chambers at daytime, or when danger appears. They tend to establish themselves in hilly, rocky areas with good shelter and accessible vegetation.</p>
+          <a href="https://en.wikipedia.org/wiki/Uromastyx" class="btn btn-primary">About Uromastix</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; border: 2px solid;">
+        <img src="Mongoose.jpg" class="card-img-top" alt="Mongoose">
+        <div class="card-body">
+          <h5 class="card-title">Mongoose</h5>
+          <p class="card-text">A mongoose is a small terrestrial carnivorous mammal belonging to the family Herpestidae. This family is currently split into two subfamilies, the Herpestinae and the Mungotinae. The Herpestinae comprises 23 living species that are native to southern Europe, Africa and Asia, whereas the Mungotinae comprises 11 species native to Africa.[2] The Herpestidae originated about 21.8 ± 3.6 million years ago in the Early Miocene and genetically diverged into two main genetic lineages between 19.1 and 18.5 ± 3.5 million years ago.</p>
+          <a href="https://en.wikipedia.org/wiki/Mongoose" class="btn btn-primary">About Mongoose</a>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
 </body>
 </html>
